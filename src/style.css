@@ -331,3 +331,24 @@ html.dark .tcons{color:#ec8a80}
 .trow>i.sv{background:linear-gradient(var(--line),var(--line)) 0 50%/100% 1px no-repeat}
 .trow>i>b{display:block;height:6px;border-radius:3px}
 .tadd{grid-column:2;margin-top:8px}
+
+/* Phones: text blocks reflow to one column; the dense widgets (mockup, threat list, tables) keep their width and scroll sideways in their own box. */
+@media (max-width:700px){
+  .wrap{padding:20px 14px 80px}
+  header{flex-direction:column-reverse;gap:10px}
+  header h1{font-size:23px}
+  .kp,.tcards,.ctl-ex,.hists{grid-template-columns:1fr}
+  .sec{margin-top:40px}
+  .sec h2{font-size:17px}
+  .sub-img figure,#problem .sub-img figure,#considerations .sub-img figure,.ctl-ex-fig figure,#complexity .cx-fig figure{float:none;width:100%;margin:12px 0}
+  #complexity{display:block}
+  #ux,#arch,#threats,#layers{overflow-x:auto}
+  .arch-wrap{min-width:600px}
+  .win{min-width:780px}
+  .threats{min-width:max-content}
+  .ltable{min-width:560px}
+  .aside{flex-basis:auto}
+  .sign{text-align:left}
+  .sign .about{margin-left:0}
+  #ctl{display:none}
+}
