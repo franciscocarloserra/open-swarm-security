@@ -4,6 +4,8 @@ Interactive article on keeping swarms of parallel LLM agents in scope: a swarm c
 
 Read it: https://franciscocarloserra.github.io/open-swarm-security/
 
+Discussion: https://news.ycombinator.com/item?id=50064785 and https://x.com/francarloerra/status/2109798460140458101
+
 To open it locally, open `index.html` in a browser. It's plain HTML and JS with no build step.
 
 - `index.html` the article
