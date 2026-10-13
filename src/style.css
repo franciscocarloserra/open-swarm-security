@@ -244,6 +244,9 @@ html.dark{--black:#3a3f47}
 @media (max-width:900px){
   .c-top,.two,.rwrap{grid-template-columns:1fr}
   .arch-wrap{flex-direction:column}
+  .arch,.aside{flex:none}  /* in a column the flex-basis became a fixed height */
+  .aside{display:grid;grid-template-columns:1fr 1fr}
+  .aside>b{grid-column:1/-1}
   .kp{grid-template-columns:1fr 1fr}
 }
 
@@ -342,8 +345,11 @@ html.dark .tcons{color:#ec8a80}
   .sec h2{font-size:17px}
   .sub-img figure,#problem .sub-img figure,#considerations .sub-img figure,.ctl-ex-fig figure,#complexity .cx-fig figure{float:none;width:100%;margin:12px 0}
   #complexity{display:block}
-  #ux,#arch,#threats,#layers{overflow-x:auto}
-  .arch-wrap{min-width:600px}
+  #ux,#threats,#layers{overflow-x:auto}
+  .abox{padding:0 8px;font-size:14px}
+  .acells i:nth-child(n+16){display:none}
+  .asub{flex-wrap:wrap}
+  .asub span{flex:1 1 40%}
   .win{min-width:780px}
   .threats{min-width:max-content}
   .ltable{min-width:560px}
