@@ -10,7 +10,7 @@ SSE.KEYPOINTS = ['swarm', 'why', 'now', 'gap'];
 
 // ───────── tool kinds, from the most external to the closest to the context. Shared by the architecture (section 2),
 // the tripwires and the tool-call table (section 1). `DANGEROUS` is marked in red.
-SSE.TOOLS = ['internet', 'bus', 'runtime', 'fs'];  // 'ext' (applications) and 'kg' (knowledge graph) removed for now
+SSE.TOOLS = ['internet', 'runtime', 'fs', 'bus'];  // 'ext' (applications) and 'kg' (knowledge graph) removed for now
 SSE.CONTROLS = ['model', 'context', 'tool', 'toolLayer', 'access'];  // Controls in detail, left to right = proactive to reactive
 SSE.CRITICAL_CONTROL = 'context';  // painted red in Controls in detail
 SSE.CRITICAL_CONTROL = 'context';  // painted red in Controls in detail and in the architecture band
