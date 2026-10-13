@@ -308,7 +308,10 @@ window.SSE_EDITS = {
     "controlsDetail.tool.p": "Cada herramienta tiene sus propios límites y alarmas. Una llamada que rompe una regla se bloquea y el CONTEXTO se marca o se aísla del bus y las herramientas.",
     "controlsDetail.toolLayer.p": "Una capa por la que pasa toda llamada a herramientas. Aplica presupuestos, pausa antes de cualquier acción irreversible, revisa lo que sale y, ante la duda, bloquea.",
     "controlsDetail.access.p": "Define a qué puede llegar cada agente: sitios permitidos, límites de uso y credenciales propias. Nada se comparte entre agentes.",
-    "threats.consT": "Consecuencias"
+    "threats.consT": "Consecuencias",
+    "ui.sb": "El problema",
+    "threats.add": "+ agregar",
+    "problem.swarm.img": "Enjambre"
   },
   "zh": {
     "controlsDetail.bitter.p": "当然，100% 支持由智能体编排层解决一切。\n\n但它在时间和算力上的扩展性极差。关键是给人类操作员和集群编排智能体提供工具，让它们能尽可能快速高效地扇入。",

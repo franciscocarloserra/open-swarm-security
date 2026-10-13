@@ -20,7 +20,7 @@
     sk: "Controls in detail",
     skp: "Párrafo tentativo: cómo se apilan los controles y por qué ninguno alcanza solo. Doble clic para editar.",
     sc: "Important considerations",
-    sb: "El problema",
+    sb: "The problem",
     sv: "On Complexity and Vibing", svp: "PÁRRAFO: ON COMPLEXITY AND VIBING",
     sa: "Call to action", sap: "CALL TO ACTION",
     so: "Sources", sop: "SOURCES",
@@ -35,7 +35,7 @@
   // ───── 1 · the problem (src/sections/problem.js)
   complexity: { cap: "CAPTION" },
   cta: { p2: "PÁRRAFO ADICIONAL", p3: "PÁRRAFO 3" },
-  problem: { swarm: { img: "IMAGEN: ENJAMBRE", cap: "CAPTION" }, def: { cap: "CAPTION", t: "Definición de swarm", p: "DEFINICIÓN DE SWARM" } },
+  problem: { swarm: { img: "Swarm", cap: "CAPTION" }, def: { cap: "CAPTION", t: "Definición de swarm", p: "DEFINICIÓN DE SWARM" } },
 
   // ───── key points under the title (src/app.js)
   kp: {
@@ -186,7 +186,7 @@
   },
   threats: {
     consT: "Consecuencias",
-    add: "+ agregar",
+    add: "+ add",
     // Draft list shown while the risks are rewritten (SHOW_CHART in threats.js); "\n" starts a new line.
     draft: "Contenido que lee el agente\n1. Instrucciones ocultas en una página o archivo — el contenido externo es dato, nunca una orden (prob. alta, impacto alto)\n2. Memoria compartida envenenada que se propaga a otros agentes — marcar el origen de cada entrada; poner en cuarentena las fuentes malas (prob. media, impacto alto)\n3. Secretos que terminan en el contexto del modelo — quitar los secretos antes de que el modelo lea (prob. media, impacto medio)\n\nAcciones del agente\n4. Acción destructiva sobre sistemas propios — acceso mínimo; una persona aprueba todo lo irreversible (prob. media, impacto alto)\n5. Fuga de datos a través de una herramienta — revisar lo que sale, no solo lo que entra (prob. media, impacto alto)\n6. Gasto descontrolado por loops y reintentos — presupuestos duros por agente y por swarm (prob. alta, impacto medio)\n\nAtaques que lanza el agente\n7. Ataques a sistemas externos (escaneos, abuso de APIs, floods) — lista de sitios permitidos; límite de uso por herramienta (prob. media, impacto alto)\n8. Movimiento lateral por sistemas internos, escalada de privilegios — agentes aislados; sin credenciales compartidas (prob. baja, impacto alto)\n9. Agentes que se coordinan a través del bus de mensajes — los mensajes son datos, no órdenes; el bus se monitorea (prob. baja, impacto alto)\n\nEl sistema en sí\n10. Un bug en la capa de control deja pasar cosas — un segundo chequeo independiente; ante falla, bloquear (prob. media, impacto alto)\n11. Un modelo más fuerte esquiva los chequeos — modelo más fuerte, límites más estrictos (prob. media, impacto alto)\n12. Escape del sandbox — sandbox aplicado fuera del alcance del agente (prob. baja, impacto alto)\n13. El proveedor cambia el modelo sin avisar — versión de modelo fija; alerta ante cualquier cambio (prob. media, impacto medio)\n\nSupervisión\n14. El orquestador es engañado por lo que lee — el orquestador solo puede pausar; una persona aprueba el resto (prob. media, impacto alto)\n15. Nadie mira el swarm — reporte periódico de una pantalla (prob. media, impacto alto)\n16. Demasiadas alertas; la gente deja de leerlas — tope de alertas: menos y mejores (prob. alta, impacto medio)",
     inject: { t: "Hidden instructions in a page or file" },
@@ -224,7 +224,7 @@
     ] },
   },
   toolsDetail: {
-    identity: { t: "Identidad y atribución", p: "IDENTIDAD Y ATRIBUCIÓN POR AGENTE" },
+    identity: { t: "Identity and attribution", p: "Per-agent identity and attribution" },
     harnesses: { t: "On current harnesses", p: "Párrafo tentativo sobre los arneses actuales. Doble clic para editar." },
     h: { tool: "Tool", does: "What it allows", limits: "Limits", flag: "Flagged when", action: "Action" },
     internet: { p: "The only way out to the web. Every request goes through one proxy that logs it, so a page that tries to steer an agent is caught where it enters.", does: "Web requests through one proxy; every request logged", limits: "Allowed sites only · 1,000 requests/h per agent · no uploads without approval", flag: "A new site · any upload · a page with instructions in it" },
