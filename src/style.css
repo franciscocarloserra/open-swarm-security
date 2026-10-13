@@ -171,7 +171,7 @@ html.dark{--black:#3a3f47}
 .abox span{color:var(--mute);overflow:hidden;text-overflow:ellipsis}
 .acells{display:flex;gap:2px;margin-left:0}
 .acells i{width:10px;height:10px;border-radius:2px;background:var(--ok)}
-.tl-band{margin-bottom:6px}
+.tl-band{margin-bottom:10px}  /* same gap as between the cards */
 .arch .ctl-band,.tl-band{display:flex;align-items:center;justify-content:center;height:28px;padding:0 14px;border-radius:6px;font-size:13px;text-align:center}
 .arch .actl{height:24px;line-height:24px;margin-top:-6px;padding:0 14px;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .atools{border:1px solid var(--line);border-radius:6px;background:var(--card);padding:8px 14px 10px}
@@ -247,7 +247,7 @@ html.dark{--black:#3a3f47}
   .arch,.aside{flex:none}  /* in a column the flex-basis became a fixed height */
   .aside{display:grid;grid-template-columns:1fr 1fr}
   .aside>b{grid-column:1/-1}
-  .kp{grid-template-columns:1fr 1fr}
+  .kp,.tcards{grid-template-columns:1fr 1fr}
 }
 
 /* Tools in detail: four cards in a row */
@@ -256,6 +256,7 @@ html.dark{--black:#3a3f47}
 .tcard-h{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px}
 .tcard-h .tact{font-size:11px;padding:1px 6px}
 .tcard p{margin:0 0 8px}
+.tcard p:last-child{margin-bottom:0}
 .tcard dl{margin:0}.tcard dt{color:var(--mute);font-size:11px;text-transform:uppercase;margin-top:6px}.tcard dd{margin:2px 0 0}
 .ctl-cards .tcard{background:var(--black);border-color:var(--black);color:#fff}
 .ctl-cards .tcard.crit,.ctl-band.crit{background:var(--threat);border-color:var(--threat)}
@@ -341,6 +342,7 @@ html.dark .tcons{color:#ec8a80}
   header{flex-direction:column-reverse;gap:10px}
   header h1{font-size:23px}
   .kp,.tcards,.ctl-ex,.hists{grid-template-columns:1fr}
+  .tcard{padding:12px 14px;font-size:14px}
   .sec{margin-top:40px}
   .sec h2{font-size:17px}
   .sub-img figure,#problem .sub-img figure,#considerations .sub-img figure,.ctl-ex-fig figure,#complexity .cx-fig figure{float:none;width:100%;margin:12px 0}
