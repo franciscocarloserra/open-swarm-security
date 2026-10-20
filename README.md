@@ -4,6 +4,9 @@ Interactive article on keeping swarms of parallel LLM agents in scope: a swarm c
 
 Read it: https://franciscocarloserra.github.io/open-swarm-security/
 
+<img width="1297" height="617" alt="Screenshot_20261020_113342" src="https://github.com/user-attachments/assets/d83ff2b1-793c-4ddb-a9fb-abd3fb2b9207" />
+
+
 Discussion: https://news.ycombinator.com/item?id=50064785 and https://x.com/francarloerra/status/2109798460140458101
 
 Plain markdown: https://franciscocarloserra.github.io/open-swarm-security/md/en.md (also `es.md`, `zh.md`)
