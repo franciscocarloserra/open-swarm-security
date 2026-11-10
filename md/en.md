@@ -4,6 +4,8 @@
 
 Intuitions, disorganized ideas, a tentative architecture and reference PoC implementations
 
+> **This article called it a month early.** In October we argued that agent swarms need controls that can interrupt inference the moment something goes wrong. A month later, OpenAI announced [Control Room](https://openai.com/index/control-room/), built to stop model output across its research infrastructure. The rest of the playbook is below, open to everyone, before the labs ship it.
+
 **What is a Swarm?** More than a Human Owner with an AI Orchestrator can supervise at once.
 
 **Why use a Swarm?** To parallelize tasks without a fixed, predefined collaboration topology.

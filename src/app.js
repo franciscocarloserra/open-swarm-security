@@ -141,6 +141,7 @@
     app.innerHTML = `
       <header><div><div class="byline"><a href="${GITHUB}">${th('ui.author')}</a> · <a href="${CONTACT}" target="_blank" rel="noopener">${th('ui.contact')}</a> · <a href="${X_URL}" target="_blank" rel="noopener">${th('ui.x')}</a> · <span>${th('ui.date')}</span></div><h1>${th('ui.title')}</h1><p>${th('ui.subtitle')}</p></div>
         <nav class="langs">${D.LANGS.length < 2 ? '' : D.LANGS.filter(k => L[k]).map(k => `<a href="?lang=${k}" class="${k === lang ? 'on' : ''}" data-lang="${k}">${L[k].meta.name}</a>`).join('')}<button class="theme" data-theme>${dark ? '☀' : '☾'}</button></nav></header>
+      <aside class="update"><b>${th('ui.update.b')}</b> ${th('ui.update.a')} <a href="https://openai.com/index/control-room/" target="_blank" rel="noopener">Control Room</a>${th('ui.update.c')}</aside>
       <div class="kp">${D.KEYPOINTS.map(k => `<div><span><b data-k="kp.${k}.t">${th(`kp.${k}.t`)}</b><span data-k="kp.${k}.d">${th(`kp.${k}.d`)}</span></span></div>`).join('')}</div>
       <div class="exec"><h3 class="sub-h">${th('ui.exec.t')}</h3><p class="sub-p">${th('ui.exec.p')}</p></div>`;
     for (const [n, id, name, key] of ORDER) {
