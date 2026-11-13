@@ -4,7 +4,7 @@
 
 Intuiciones, ideas desorganizadas, una arquitectura tentativa e implementaciones PoC de referencia
 
-> **Este artículo se adelantó un mes.** En octubre planteamos que los swarms de agentes necesitan controles capaces de interrumpir la inferencia en cuanto algo sale mal. Un mes después, OpenAI anunció [Control Room](https://openai.com/index/control-room/), hecho para frenar la salida de los modelos en toda su infraestructura de investigación. El resto del playbook está abajo, abierto para todos, antes de que lo lancen los labs.
+> **Este artículo se adelantó un mes.** En octubre planteamos que los swarms de agentes necesitan controles capaces de interrumpir la inferencia en cuanto algo sale mal. Un mes después, OpenAI anunció [Control Room](https://openai.com/index/control-room/), hecho para frenar la salida de los modelos en toda su infraestructura de investigación. Y Anthropic publicó [Safely scaling multi-agent teams](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/), una corrida de 1.000 agentes contenida con las mismas capas: un sandbox por agente, un clasificador en cada tool call, una parada de todo el equipo y monitoreo offline. El resto del playbook está abajo, abierto para todos, antes de que lo lancen los labs.
 
 **Que es un Swarm?** Más de lo que un Owner Humano con un Orquestador de IA puede supervisar a la vez.
 
@@ -435,6 +435,7 @@ Ninguno de estos controles por sí solo es suficiente para prevenir un incidente
 <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>
 <https://alignment.openai.com/misalignment-reports/>
 <https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals>
+<https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/>
 
 <https://github.com/NVIDIA/OpenShell>
 <https://huggingface.co/LiquidAI/d1-3B>

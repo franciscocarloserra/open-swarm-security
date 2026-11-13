@@ -4,7 +4,7 @@
 
 直觉、零散想法、一个初步架构和参考 PoC 实现
 
-> **本文提前一个月指出了这一点。** 我们在十月提出，智能体集群需要能在出问题时立即中断推理的控制措施。一个月后，OpenAI 发布了 [Control Room](https://openai.com/index/control-room/)，用于在其整个研究基础设施中停止模型输出。其余方案见下文，向所有人开放，赶在各大实验室推出之前。
+> **本文提前一个月指出了这一点。** 我们在十月提出，智能体集群需要能在出问题时立即中断推理的控制措施。一个月后，OpenAI 发布了 [Control Room](https://openai.com/index/control-room/)，用于在其整个研究基础设施中停止模型输出。Anthropic 也发布了 [Safely scaling multi-agent teams](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/)，用同样的分层控制约束了 1000 个智能体：每个智能体一个沙箱、每次工具调用都经过分类器、一旦拦截全队停止，以及离线监控。其余方案见下文，向所有人开放，赶在各大实验室推出之前。
 
 **什么是集群？** 超出一个人类负责人加一个 AI 编排器能同时监督的规模。
 
@@ -435,6 +435,7 @@ swarm.stop(reason="suspicious output from worker-2")   # kill everything, keep t
 <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>
 <https://alignment.openai.com/misalignment-reports/>
 <https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals>
+<https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/>
 
 <https://github.com/NVIDIA/OpenShell>
 <https://huggingface.co/LiquidAI/d1-3B>

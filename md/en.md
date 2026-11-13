@@ -4,7 +4,7 @@
 
 Intuitions, disorganized ideas, a tentative architecture and reference PoC implementations
 
-> **This article called it a month early.** In October we argued that agent swarms need controls that can interrupt inference the moment something goes wrong. A month later, OpenAI announced [Control Room](https://openai.com/index/control-room/), built to stop model output across its research infrastructure. The rest of the playbook is below, open to everyone, before the labs ship it.
+> **This article called it a month early.** In October we argued that agent swarms need controls that can interrupt inference the moment something goes wrong. A month later, OpenAI announced [Control Room](https://openai.com/index/control-room/), built to stop model output across its research infrastructure. And Anthropic published [Safely scaling multi-agent teams](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/), a 1,000-agent run contained with the same layers: per-agent sandboxes, a classifier on every tool call, a team-wide stop and offline monitoring. The rest of the playbook is below, open to everyone, before the labs ship it.
 
 **What is a Swarm?** More than a Human Owner with an AI Orchestrator can supervise at once.
 
@@ -435,6 +435,7 @@ What happens when agent swarms start interacting with each other? When they star
 <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>
 <https://alignment.openai.com/misalignment-reports/>
 <https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals>
+<https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/>
 
 <https://github.com/NVIDIA/OpenShell>
 <https://huggingface.co/LiquidAI/d1-3B>
